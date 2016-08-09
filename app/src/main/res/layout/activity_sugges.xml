@@ -1,0 +1,20 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical" >
+
+    <EditText
+        android:maxLength="300"
+        android:textColor="#fff"
+        android:id="@+id/et_text"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="12sp"
+        android:gravity="left"
+        android:hint="请填写您的宝贵意见" 
+        android:layout_margin="10dp"
+        android:background="@null">
+    </EditText>
+
+</LinearLayout>

@@ -1,0 +1,43 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gray_side"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:text="确定删除此地址" />
+
+    <View android:layout_height="0.5dp" android:layout_width="match_parent" android:background="#33000000"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="取消"
+             android:textSize="18sp"
+            android:textColor="#F05050" />
+        <View android:layout_height="match_parent" android:layout_width="0.5dp" android:background="#33000000"/>
+
+        <TextView
+            android:id="@+id/tv_affirm"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="确定"
+             android:textSize="18sp"
+            android:textColor="#F05050" />
+    </LinearLayout>
+
+</LinearLayout>

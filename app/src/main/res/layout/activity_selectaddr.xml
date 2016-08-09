@@ -1,0 +1,28 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <ListView android:layout_weight="1" android:id="@+id/lv_selectaddr" android:divider="#00000000"  android:dividerHeight="0dp" android:layout_width="match_parent" android:layout_height="wrap_content"></ListView>
+   
+            <LinearLayout
+            android:layout_marginTop="30dp"
+            android:id="@+id/ll_info_exit"
+            android:layout_width="fill_parent"
+            android:layout_height="65.0dip"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/bt_new_addr"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="8dp"
+                android:background="@drawable/bg_white_side"
+                android:text="新  增  地  址"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+</LinearLayout>

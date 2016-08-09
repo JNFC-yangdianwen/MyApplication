@@ -1,0 +1,76 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="20dp"
+    android:orientation="vertical" 
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp">
+
+    <LinearLayout
+        android:id="@+id/ll_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="130dp"
+        android:orientation="horizontal"
+        android:background="@drawable/wdyhq_coupons" >
+        
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2" >
+
+            <TextView
+                android:id="@+id/tv_couponMoney"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="10"
+               android:textColor="@color/text_red"
+                android:textSize="65sp" />
+
+            <TextView
+                android:id="@+id/tv_yj"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tv_couponMoney"
+                android:layout_alignBottom="@+id/tv_couponMoney"
+                android:layout_toLeftOf="@+id/tv_couponMoney"
+                android:text="￥"
+                android:textColor="@color/text_red" />
+        </RelativeLayout> 
+
+         <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_couponName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="bottom"
+                android:text="老用户优惠劵"
+                android:textSize="22sp" />
+            <TextView
+                android:id="@+id/tv_manjian"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="bottom"
+                android:text="(满0元可用)"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_usefultime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="8dp"
+                android:text="有效期至 2015-12-15"
+                android:textColor="@color/text_gray"
+                android:textSize="18sp" />
+        </LinearLayout>  
+    </LinearLayout>
+
+</LinearLayout>

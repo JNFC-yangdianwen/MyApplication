@@ -1,0 +1,208 @@
+
+    <resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+
+        <!--
+            Base application theme, dependent on API level. This theme is replaced
+            by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+
+
+        -->
+        <style name="AppBaseTheme" parent="android:Theme.Light">
+            <!--
+                Theme customizations available in newer API levels can go in
+                res/values-vXX/styles.xml, while customizations related to
+                backward-compatibility can go here.
+
+
+            -->
+        </style>
+
+        <!-- Application theme. -->
+        <style name="AppTheme" parent="AppBaseTheme">
+            <item name="android:windowNoTitle">true</item>
+            <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+        </style>
+
+        <style name="layout_fill">
+            <item name="android:layout_width">fill_parent</item>
+            <item name="android:layout_height">fill_parent</item>
+        </style>
+
+        <style name="layout_wrap_content">
+            <item name="android:layout_width">wrap_content</item>
+            <item name="android:layout_height">wrap_content</item>
+        </style>
+
+        <style name="layout_fill_wrap">
+            <item name="android:layout_width">fill_parent</item>
+            <item name="android:layout_height">wrap_content</item>
+        </style>
+
+        <style name="layout_wrap_fill">
+            <item name="android:layout_width">wrap_content</item>
+            <item name="android:layout_height">fill_parent</item>
+        </style>
+
+        <!-- 侧拉栏样式 -->
+        <style name="side_ll">
+            <item name="android:layout_width">fill_parent</item>
+            <item name="android:layout_height">40dp</item>
+            <item name="android:layout_marginTop">10dp</item>
+            <item name="android:gravity">center_vertical</item>
+        </style>
+        <!-- 侧拉栏文字样式 -->
+        <style name="side_text">
+            <item name="android:layout_width">fill_parent</item>
+            <item name="android:layout_height">wrap_content</item>
+            <item name="android:textColor">#fff</item>
+            <item name="android:textSize">20sp</item>
+            <item name="android:layout_marginLeft">20dp</item>
+            <item name="android:drawablePadding">5sp</item>
+        </style>
+
+        <!-- 设置模块样式 -->
+        <style name="setup_textview">
+            <item name="android:layout_width">fill_parent</item>
+            <item name="android:layout_height">50dp</item>
+            <item name="android:gravity">center_vertical</item>
+            <item name="android:textColor">#fff</item>
+            <item name="android:textSize">18sp</item>
+            <item name="android:paddingLeft">10dp</item>
+        </style>
+        <!-- 水平线 -->
+        <style name="horizontal_thread">
+            <item name="android:layout_width">fill_parent</item>
+            <item name="android:layout_height">0.5dp</item>
+            <item name="android:background">#fff</item>
+            <item name="android:layout_marginLeft">10dp</item>
+            <item name="android:layout_marginRight">10dp</item>
+        </style>
+
+        <style name="horizontal_gray_fill">
+            <item name="android:layout_width">fill_parent</item>
+            <item name="android:layout_height">0.5dp</item>
+            <item name="android:background">#33000000</item>
+        </style>
+
+        <style name="horizontal_gray_fill2">
+            <item name="android:layout_width">fill_parent</item>
+            <item name="android:layout_height">1dp</item>
+            <item name="android:background">#cccccc</item>
+        </style>
+
+        <style name="customDialog" parent="@android:style/Theme.Dialog">
+
+            <!-- 背景透明 -->
+            <item name="android:windowBackground">@android:color/transparent</item>
+            <item name="android:windowContentOverlay">@null</item>
+            <!-- 浮于Activity之上 -->
+            <item name="android:windowIsFloating">true</item>
+            <!-- 边框 -->
+            <item name="android:windowFrame">@null</item>
+            <!-- Dialog以外的区域模糊效果 -->
+            <item name="android:backgroundDimEnabled">true</item>
+            <!-- 无标题 -->
+            <item name="android:windowNoTitle">true</item>
+            <!-- 半透明 -->
+            <item name="android:windowIsTranslucent">true</item>
+            <!-- <item name="android:layoutAnimation">@null</item>  //dialog弹出时没有动画 -->
+            <!-- Dialog进入及退出动画 -->
+            <item name="android:windowAnimationStyle">@style/ActionSheetDialogAnimation</item>
+        </style>
+
+        <style name="dateDialogStyle" parent="@android:style/Theme.Dialog">
+
+            <!-- 背景 -->
+            <item name="android:windowBackground">@android:color/white</item>
+            <item name="android:windowContentOverlay">@null</item>
+            <!-- 浮于Activity之上 -->
+            <item name="android:windowIsFloating">true</item>
+            <!-- 边框 -->
+            <item name="android:windowFrame">@null</item>
+            <!-- Dialog以外的区域模糊效果 -->
+            <item name="android:backgroundDimEnabled">true</item>
+            <!-- 无标题 -->
+            <item name="android:windowNoTitle">true</item>
+            <!-- 不透明 -->
+            <item name="android:windowIsTranslucent">false</item>
+            <!-- <item name="android:layoutAnimation">@null</item>  //dialog弹出时没有动画 -->
+            <!-- Dialog进入及退出动画 -->
+            <item name="android:windowAnimationStyle">@style/ActionSheetDialogAnimation</item>
+        </style>
+
+        <!-- ActionSheet进出动画 -->
+        <style name="ActionSheetDialogAnimation" parent="@android:style/Animation.Dialog">
+            <item name="android:windowEnterAnimation">@anim/actionsheet_dialog_in</item>
+            <item name="android:windowExitAnimation">@anim/actionsheet_dialog_out</item>
+        </style>
+
+        <!-- 搜索对话框的样式 -->
+        <style name="searchDialog" parent="@android:style/Theme.Dialog">
+
+            <!-- 背景透明 -->
+            <item name="android:windowBackground">@android:color/transparent</item>
+            <item name="android:windowContentOverlay">@null</item>
+            <!-- 浮于Activity之上 -->
+            <item name="android:windowIsFloating">true</item>
+            <!-- 边框 -->
+            <item name="android:windowFrame">@null</item>
+            <!-- 无标题 -->
+            <item name="android:windowNoTitle">true</item>
+            <!-- 半透明 -->
+            <item name="android:windowIsTranslucent">true</item>
+            <!-- <item name="android:layoutAnimation">@null</item>  //dialog弹出时没有动画 -->
+            <!-- Dialog进入及退出动画 -->
+            <item name="android:windowAnimationStyle">@style/searchDialogAnimation</item>
+        </style>
+
+        <!-- ActionSheet进出动画 -->
+        <style name="searchDialogAnimation" parent="@android:style/Animation.Dialog">
+            <item name="android:windowEnterAnimation">@anim/actionsheet_dialog_in1</item>
+            <item name="android:windowExitAnimation">@anim/actionsheet_dialog_out1</item>
+        </style>
+
+        <!-- <style name="StyledIndicators" parent="@android:style/Theme.Light"> -->
+        <style name="StyledIndicators" parent="AppBaseTheme">
+            <item name="android:windowNoTitle">true</item>
+            <item name="vpiTabPageIndicatorStyle">@style/CustomTabPageIndicator</item>
+        </style>
+
+        <!-- CustomTabPageIndicator属性 -->
+        <style name="CustomTabPageIndicator" parent="Widget.TabPageIndicator">
+            <item name="android:background">@drawable/tab_indicator</item>
+            <item name="android:textAppearance">@style/CustomTabPageIndicator.Text</item>
+            <item name="android:textSize">12sp</item>
+            <item name="android:textStyle">bold</item>
+            <item name="android:dividerPadding" tools:ignore="NewApi">8dp</item>
+            <item name="android:showDividers" tools:targetApi="honeycomb">middle</item>
+            <item name="android:paddingLeft">4dp</item>
+            <item name="android:paddingRight">4dp</item>
+            <!--
+                <item name="android:fadingEdge">horizontal</item>
+            <item name="android:fadingEdgeLength">8dp</item>
+
+            -->
+        </style>
+
+        <style name="CustomTabPageIndicator.Text" parent="android:TextAppearance.Medium">
+            <item name="android:typeface">monospace</item>
+            <item name="android:textColor">@drawable/selector_tabtext</item>
+        </style>
+
+        <style name="add_dialog" parent="@android:style/Theme.Dialog">
+            <item name="android:windowFrame">@null</item>
+            <!-- 边框 -->
+            <item name="android:windowIsFloating">true</item>
+            <!-- 是否浮现在activity之上 -->
+            <item name="android:windowIsTranslucent">false</item>
+            <!-- 半透明 -->
+            <item name="android:windowNoTitle">true</item>
+            <!-- 无标题 -->
+            <item name="android:windowBackground">@drawable/customdialog_bg</item>
+            <!-- 自己想要的背景 -->
+            <item name="android:backgroundDimEnabled">false</item>
+            <!-- 模糊 -->
+        </style>
+
+    </resources>
+

@@ -1,0 +1,93 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+            android:layout_marginLeft="10dp"
+             android:layout_marginRight="10dp"
+             android:paddingTop="10dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="horizontal" 
+        android:background="@drawable/bg_bar"
+        android:paddingBottom="7dp">
+
+        <LinearLayout
+            android:id="@+id/llWxpyq"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@null"
+                android:src="@drawable/wdyy_circle_of_friends" 
+                android:layout_marginBottom="6dp"/>
+
+            <TextView
+                style="@style/layout_wrap_fill"
+                android:gravity="center"
+                android:text="微信朋友圈" />
+        </LinearLayout>
+        <LinearLayout
+         	android:id="@+id/llWxhy"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@null"
+                android:layout_marginBottom="6dp"
+                android:src="@drawable/wdyy_wechat" />
+
+            <TextView
+                style="@style/layout_wrap_fill"
+                android:gravity="center"
+                android:text="微信好友" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/llsina"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:visibility="gone"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@null"
+                android:layout_marginBottom="6dp"
+                android:src="@drawable/wdyy_sina" />
+
+            <TextView
+                style="@style/layout_wrap_fill"
+                android:gravity="center"
+                android:text="新浪微博" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_margin="10dp"
+        android:id="@+id/tv_cancel"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/bg_bar"
+        android:gravity="center"
+        android:text="取    消"
+        android:textColor="#E01A3E" />
+
+</LinearLayout>

@@ -1,0 +1,89 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_yhj"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:paddingBottom="20dp" >
+
+    <LinearLayout
+        android:id="@+id/ll_bg"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/wdyhq_coupons"
+        android:orientation="horizontal"
+        tools:ignore="RtlSymmetry" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_yj"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="￥"
+                android:textColor="@color/text_red" />
+
+            <TextView
+                android:id="@+id/tv_couponMoney"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10"
+                android:textColor="@color/text_red"
+                android:textSize="60sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="5dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_couponName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="老用户优惠劵"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/tv_manjian"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="bottom"
+                android:text="(满0元可用)"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_usefultime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text=" 2015-12-15"
+                android:textColor="@color/text_gray"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#00000000"
+        android:gravity="center" >
+
+        <CheckBox
+            android:id="@+id/cb_select"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:button="@drawable/coupon_selector" />
+    </LinearLayout>
+
+</RelativeLayout>

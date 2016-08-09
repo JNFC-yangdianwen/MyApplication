@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+        <color name="text_red">#F23030</color>
+        <color name="text_gray">#BEBEBD</color>
+
+        <color name="bg_quxisuan">#E96465</color><!-- 去结算 -->
+        <color name="bg_haicha">#999999</color><!-- 还差 -->
+        <!--首页-->
+</resources>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <rotate
+        android:fromDegrees="0"
+        android:toDegrees="359"
+        android:duration="1000"
+        android:pivotX="50%"
+        android:pivotY="50%"
+
+        android:repeatCount="-1"
+        ></rotate>
+
+    <!--<rotate-->
+        <!--android:fromDegrees="45"  //起始旋转的角度-->
+    <!--android:toDegrees="89"    //结束选装后的角度-->
+    <!--android:duration="500"    //执行时间为500ms-->
+    <!--android:pivotX="50%"      //距离控件左边缘50%-->
+    <!--android:pivotY="50%"      //距离控件上边缘50%（与上边结合就是控件中心）-->
+    <!--android:fillEnabled="true"-->
+    <!--android:fillAfter="true"  //动画执行完后停留在执行完的状态-->
+    <!--/>-->
+</set>

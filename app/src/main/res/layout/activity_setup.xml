@@ -1,0 +1,27 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_clean"
+        style="@style/setup_textview"
+        android:text="清除缓存" />
+
+    <View style="@style/horizontal_thread" />
+
+    <TextView
+        android:id="@+id/tv_update"
+        style="@style/setup_textview"
+        android:text="检查更新" />
+
+    <View style="@style/horizontal_thread" />
+
+    <TextView
+        android:id="@+id/tv_sugges"
+        style="@style/setup_textview"
+        android:text="意见反馈" />
+
+    <View style="@style/horizontal_thread" />
+
+</LinearLayout>

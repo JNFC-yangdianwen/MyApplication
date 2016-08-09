@@ -1,0 +1,149 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E0000000"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/ll_userinfo"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/ll_logined"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:visibility="gone"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+             >
+
+            <TextView
+                android:id="@+id/tv_nickname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="11111 "
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_mobile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text=" 11111"
+                android:textColor="#ffffff"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_login"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="登  录"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="30dp"
+            android:layout_height="80dp"
+            android:gravity="center" >
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:clickable="false"
+                android:src="@drawable/sy_go" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#66ffffff" />
+
+    <LinearLayout
+        android:id="@+id/ll_title1"
+        style="@style/side_ll" >
+        <TextView
+            style="@style/side_text"
+            android:drawableLeft="@drawable/sy_order"
+            android:drawablePadding="15dp"
+            android:text="我的订单" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_title2"
+        style="@style/side_ll" >
+
+        <TextView
+            style="@style/side_text"
+            android:drawableLeft="@drawable/sy_address"
+            android:drawablePadding="19dp"
+            android:text="收货地址" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_title3"
+        style="@style/side_ll" >
+
+        <TextView
+            style="@style/side_text"
+            android:drawableLeft="@drawable/sy_coupons"
+            android:drawablePadding="12dp"
+            android:text="我的优惠劵" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_title4"
+        style="@style/side_ll" >
+
+        <TextView
+            style="@style/side_text"
+            android:drawableLeft="@drawable/sy_activity"
+            android:drawablePadding="15dp"
+            android:text="邀请活动" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_title5"
+        style="@style/side_ll" >
+
+        <TextView
+            style="@style/side_text"
+            android:drawableLeft="@drawable/sy_customer_service"
+            android:drawablePadding="15dp"
+            android:text="联系客服" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_title6"
+        style="@style/side_ll" >
+
+        <TextView
+            style="@style/side_text"
+            android:drawableLeft="@drawable/sy_set_up"
+            android:drawablePadding="15dp"
+            android:text="设置" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,221 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:gravity="center_vertical"
+                android:text="油菜"
+                android:textColor="#333333"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:gravity="center_vertical"
+                android:text="菜油菜油菜油菜油菜油菜油油菜油菜油菜"
+                android:textColor="#666666"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/iv_pic_name"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_marginTop="20dp"
+                android:scaleType="centerCrop"
+                android:src="#fff000" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_each_bag_money "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2.4元"
+            android:textColor="#EF4E4D" />
+
+        <TextView
+            android:id="@+id/tvdanwei"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="#666666" />
+
+        <TextView
+            android:id="@+id/tv_pounds"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="2斤装"
+            android:textColor="#EF4E4D" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+
+        <RelativeLayout
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="2dp"
+            android:gravity="center_vertical" >
+
+            <ImageView
+                android:id="@+id/iv_jian"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:background="@null"
+                android:paddingRight="10dp"
+                android:src="@drawable/sy_minus"
+                android:visibility="gone"
+                tools:ignore="ContentDescription,RtlSymmetry" />
+
+            <EditText
+                android:id="@+id/tv_num"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:background="@null"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="4"
+                android:text="0"
+                android:textColor="#E86565"
+                android:textSize="12sp"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/iv_jia"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:background="@null"
+                android:paddingLeft="10dp"
+                android:src="@drawable/sy_add"
+                tools:ignore="ContentDescription,RtlSymmetry" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_pounds_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="每斤2.4元"
+            android:visibility="gone"
+            android:textColor="#999999" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginRight="2dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:gravity="center_vertical"
+                android:text="已选"
+                android:textColor="#999999" />
+
+            <TextView
+                android:id="@+id/tv_dai_num"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:gravity="center_vertical"
+                android:text="0"
+                android:textColor="#E86565" />
+
+            <TextView
+                android:id="@+id/tvdanwei2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:gravity="center_vertical"
+                android:text="袋"
+                android:textColor="#999999" />
+
+            <TextView
+                android:id="@+id/tvgong"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="5dp"
+                android:gravity="center_vertical"
+                android:text="共"
+                android:visibility="gone"
+                android:textColor="#999999" />
+
+            <TextView
+                android:id="@+id/tv_jing_num"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:visibility="gone"
+                android:layout_centerInParent="true"
+                android:gravity="center_vertical"
+                android:text="0"
+                android:textColor="#E86565" />
+
+            <TextView
+                android:id="@+id/tvjin"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:gravity="center_vertical"
+                android:text="斤"
+                android:textColor="#999999" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        style="@style/horizontal_gray_fill2"
+        android:layout_marginTop="5dp" />
+
+</LinearLayout>

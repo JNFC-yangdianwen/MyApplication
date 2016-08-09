@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+<LinearLayout
+     android:id="@+id/btn_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:orientation="horizontal" >
+
+
+
+            <Button
+                android:id="@+id/dialog_ensure_button_cancel"
+                  android:layout_width="0dip"
+                  android:layout_weight="1"
+                android:layout_height="35dip"
+                android:text="取消           "
+                android:background="@null"
+                android:textColor="@color/text_red"
+                android:textSize="15dip" />
+  
+
+
+
+            <Button
+                android:id="@+id/dialog_ensure_button_sure"
+                  android:layout_width="0dip"
+                  android:layout_weight="1"
+                android:layout_height="35dip"
+                android:textColor="@color/text_red"
+                android:text="           确认"
+                android:background="@null"
+                android:textSize="15dip" />
+     </LinearLayout> 
+
+        <com.buyfood.view.Nu
+            android:background="#EBEBEB"
+            android:id="@+id/np_date"
+            android:clickable="false"
+            android:focusable="false"
+            android:descendantFocusability="blocksDescendants"
+            android:layout_below="@id/btn_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        
+        
+
+        
+
+        
+
+</RelativeLayout>
